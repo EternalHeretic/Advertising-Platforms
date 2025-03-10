@@ -1,0 +1,14 @@
+### Загрузка данных из файла
+POST http://localhost:5142/api/ads/load
+Content-Type: application/json
+
+"ad_platforms.txt"
+
+### Поиск рекламных площадок для локации /ru/msk
+GET http://localhost:5142/api/ads/search?location=/ru/msk
+
+### Поиск рекламных площадок для локации /ru/svrd/revda
+GET http://localhost:5142/api/ads/search?location=/ru/svrd/revda
+
+### Поиск рекламных площадок для локации /ru
+GET http://localhost:5142/api/ads/search?location=/ru
